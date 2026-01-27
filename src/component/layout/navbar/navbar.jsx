@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import logo from "@/assets/layout/logo.svg";
 import Email from "@/component/shared/button/Email";
 import closeMenu from "@/assets/layout/CrossIcon.png";
@@ -9,32 +10,41 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const onClick = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const isActive = (href) => {
+    if (href === "/") return pathname === "/";
+    return pathname.startsWith(href);
+  };
+
+  const linkClass = (href) =>
+    isActive(href) ? "text-custom-text font-medium" : "text-gray-500 font-light";
+
   return (
     <>
       {/* Desktop Navbar */}
-      <div className="w-full px-16 xl:px-44 py-4 md:py-12 z-50 bg-linear-to-r from-blue-50 via-blue-50 to-white items-center justify-between hidden md:flex sticky top-0">
+      <div className="w-full px-16 xl:px-44 py-4 lg:py-8 z-50 bg-linear-to-r from-blue-50 via-blue-50 to-white items-center justify-between hidden lg:flex sticky top-0 border-b border-b-gray-300">
         <Link href="/" className="navbar-logo cursor-pointer">
           <img src={logo.src} alt="" />
         </Link>
-        <div className="navbar-link justify-between text-gray-500 items-center flex">
-          <Link href="/" className="p-1 pr-9 font-light inline-block">
+        <div className="navbar-link justify-between items-center flex">
+          <Link href="/" className={`p-1 pr-9 inline-block ${linkClass("/")}`}>
             Home
           </Link>
-          <Link href="/Pricing" className="p-1 pr-9 font-light inline-block">
+          <Link href="/Pricing" className={`p-1 pr-9 inline-block ${linkClass("/Pricing")}`}>
             Pricing
           </Link>
-          <Link href="/Service" className="p-1 pr-9 font-light inline-block">
+          <Link href="/Service" className={`p-1 pr-9 inline-block ${linkClass("/Service")}`}>
             Services
           </Link>
-          <Link href="/AboutUs" className="p-1 pr-9 font-light inline-block">
+          <Link href="/AboutUs" className={`p-1 pr-9 inline-block ${linkClass("/AboutUs")}`}>
             About
           </Link>
-          <Link href="/Contact" className="p-1 pr-9 font-light inline-block">
+          <Link href="/Contact" className={`p-1 pr-9 inline-block ${linkClass("/Contact")}`}>
             Contact
           </Link>
         </div>
@@ -44,8 +54,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navbar */}
-      <div className="w-full px-4 py-4 z-50 bg-linear-to-r from-blue-50 via-blue-50 to-white items-center justify-between flex md:hidden sticky top-0">
+      {/* Mobile & Tablet Navbar */}
+      <div className="w-full px-4 md:px-8 py-4 z-50 bg-linear-to-r from-blue-50 via-blue-50 to-white items-center justify-between flex lg:hidden sticky top-0 border-b border-b-gray-300">
         <Link href="/" className="navbar-logo cursor-pointer">
           <img src={logo.src} alt="" />
         </Link>
@@ -58,40 +68,40 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+      {/* Mobile & Tablet Menu Dropdown */}
       {menuOpen && (
-        <div className="flex md:hidden flex-col bg-white shadow-lg absolute w-full z-40 px-4 py-4">
+        <div className="flex lg:hidden flex-col bg-white shadow-lg absolute w-full z-40 px-4 md:px-8 py-4">
           <Link
             href="/"
-            className="p-2 font-light text-gray-500"
+            className={`p-2 ${linkClass("/")}`}
             onClick={onClick}
           >
             Home
           </Link>
           <Link
-            href="/pricing"
-            className="p-2 font-light text-gray-500"
+            href="/Pricing"
+            className={`p-2 ${linkClass("/Pricing")}`}
             onClick={onClick}
           >
             Pricing
           </Link>
           <Link
-            href="/services"
-            className="p-2 font-light text-gray-500"
+            href="/Service"
+            className={`p-2 ${linkClass("/Service")}`}
             onClick={onClick}
           >
             Services
           </Link>
           <Link
-            href="/about"
-            className="p-2 font-light text-gray-500"
+            href="/AboutUs"
+            className={`p-2 ${linkClass("/AboutUs")}`}
             onClick={onClick}
           >
             About
           </Link>
           <Link
-            href="/contact"
-            className="p-2 font-light text-gray-500"
+            href="/Contact"
+            className={`p-2 ${linkClass("/Contact")}`}
             onClick={onClick}
           >
             Contact

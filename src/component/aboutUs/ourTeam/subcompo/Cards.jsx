@@ -1,5 +1,8 @@
 import Card from "./Card";
-import personA from "@/assets/home/hero/personImg.svg";
+import personA from "@/assets/aboutUs/ourTeam/personA.svg";
+import personB from "@/assets/aboutUs/ourTeam/personB.svg";
+import personC from "@/assets/aboutUs/ourTeam/personC.svg";
+import personD from "@/assets/aboutUs/ourTeam/personD.svg";
 
 const data = [
   {
@@ -10,19 +13,19 @@ const data = [
   },
   {
     key: 2,
-    img: personA,
+    img: personB,
     name: "Lyra Bennett",
     position: "Founder & CEO",
   },
   {
     key: 3,
-    img: personA,
+    img: personC,
     name: "Cassian Holt",
     position: "Marketing Head",
   },
   {
     key: 4,
-    img: personA,
+    img: personD,
     name: "Imogen Clarke",
     position: "Finance Manager",
   },

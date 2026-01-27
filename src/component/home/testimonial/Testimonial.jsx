@@ -6,7 +6,7 @@ const Testimonial = () => {
     <div className="w-full px-16 xl:px-44 py-4 md:py-12 z-50 bg-linear-to-r from-blue-50 via-blue-50 to-white items-center justify-evenly">
       <div className="flex flex-row items-center w-full gap-4 text-gray-300">
         <p className="whitespace-nowrap">Testimonial:</p>
-        <hr className="grow border-t border-gray-300 mb-3" />
+        <hr className="grow border-t border-gray-300" />
       </div>
       <div className="flex flex-col md:flex-row justify-between">
         <div className="w-full sm:w-2/3 md:w-1/2">

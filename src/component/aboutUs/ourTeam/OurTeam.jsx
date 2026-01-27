@@ -5,12 +5,12 @@ import Cards from "./subcompo/Cards";
 
 const OurTeam = () => {
   return (
-    <div className="py-16 px-4 md:px-8 lg:px-16">
-      <div className="text-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+    <div className="w-full px-8 md:px-16 xl:px-44 py-12 md:py-20 z-50 bg-linear-to-r from-blue-50 via-blue-50 to-white ">
+      <div className="mb-12 flex flex-col justify-center items-center w-full md:w-1/3">
+        <h1 className="text-4xl lg:text-6xl font-bold text-gray-900">
           Meet Our Team
         </h1>
-        <Image src={curve} alt="curve" className="mx-auto mt-2" />
+        <Image src={curve} alt="curve" className="mt-2" />
       </div>
       <Cards />
     </div>

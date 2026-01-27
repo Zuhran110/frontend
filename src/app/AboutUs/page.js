@@ -3,6 +3,7 @@ import Mission from "@/component/aboutUs/mission/Mission";
 import Info from "@/component/home/information/Info";
 import Value from "@/component/aboutUs/value/Value";
 import OurTeam from "@/component/aboutUs/ourTeam/OurTeam";
+import Partnership from "@/component/aboutUs/partnership/Partnership";
 
 export default function ContactPage() {
   return (
@@ -10,6 +11,7 @@ export default function ContactPage() {
       <Hero />
       <Value />
       <Mission />
+      <Partnership />
       <OurTeam />
       <Info />
     </>

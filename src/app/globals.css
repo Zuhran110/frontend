@@ -21,3 +21,31 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Splide arrow positioning */
+.splide__arrow {
+  background: white !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+  opacity: 1 !important;
+}
+
+.splide__arrow--prev {
+  left: -2.5rem !important;
+}
+
+.splide__arrow--next {
+  right: -2.5rem !important;
+}
+
+.splide__track {
+  padding: 0.5rem 0 !important;
+}
+
+.splide__slide {
+  height: auto !important;
+}
+
+.splide__list {
+  align-items: stretch !important;
+}

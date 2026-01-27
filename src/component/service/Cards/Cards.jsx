@@ -12,48 +12,56 @@ const data = [
   {
     img: Accounts.src,
     heading: "Accounts",
+    slug: "annual-accounts",
     description:
       "Start your business journey with confidence. We handle the paperwork while you focus on your vision.",
   },
   {
     img: CorporationTax.src,
     heading: "Corporation Tax",
+    slug: "corporation-tax",
     description:
       "Managing corporation tax is a crucial yet complex aspect of running a UK-based business. We provide expert Corporation Tax",
   },
   {
     img: SelfAssessment.src,
     heading: "Self Assessment",
+    slug: "self-assessment",
     description:
       "Filing your self-assessment tax return can be complex and overwhelming, but with Online Taxation",
   },
   {
     img: CompanySecretarial.src,
     heading: "Company Secretarial",
+    slug: "company-secretary",
     description:
       "This service is invaluable in providing peace of mind that the company secretarial aspects of your business ",
   },
   {
     img: Payroll.src,
     heading: "Payroll",
+    slug: "payroll-services",
     description:
       "When your business hires its first employee, you must register for PAYE online with HMRC.",
   },
   {
     img: Vat.src,
     heading: "Vat Services",
+    slug: "vat-services",
     description:
       "Simplify your VAT registration process with Online Taxation expert-driven VAT registration service.",
   },
   {
     img: Bookkeeping.src,
     heading: "Bookkeeping",
+    slug: "bookkeeping-services",
     description:
       "Managing your finances shouldn't be stressful.  we specialize in offering bookkeeping UK services",
   },
   {
     img: CompanyFormation.src,
     heading: "Company Formation",
+    slug: "company-formation",
     description:
       "Welcome to online Taxation, your ultimate solution for limited company formation and seamless UK company registration",
   },
@@ -70,6 +78,7 @@ const Cards = () => {
               img={item.img}
               heading={item.heading}
               description={item.description}
+              slug={item.slug}
             />
           ))}
         </div>

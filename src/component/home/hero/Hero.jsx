@@ -30,7 +30,7 @@ const Hero = () => {
             your business size or structure, we have the perfect package for
             you.
           </p>
-          <div className="w-full md:w-1/3">
+          <div className="w-full md:w-1/2 2xl:w-50">
             <GetStartedNow />
           </div>
         </div>

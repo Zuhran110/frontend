@@ -1,5 +1,5 @@
 import Services from "./components/Services.jsx";
-import Comapany from "./components/Company.jsx";
+import Company from "./components/Company.jsx";
 import ContactUS from "./components/ContactUS.jsx";
 import LinkdinIcon from "@/assets/layout/lindin.svg";
 import instagram from "@/assets/layout/instagram.svg";
@@ -66,7 +66,7 @@ const Footer = () => {
           </li>
           <li className="">
             <span className="text-gray-200"> Support </span>
-            <Comapany />
+            <Company />
           </li>
         </ul>
       </div>

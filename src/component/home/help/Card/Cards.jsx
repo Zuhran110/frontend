@@ -8,36 +8,42 @@ import Card from "./Card";
 
 const data = [
   {
+    slug: "individuals",
     img: Individual,
     heading: "Individual",
     description:
       "Simplicity and complete bookkeeping support for an unbeatable price Our Individuals business accountancy services have been designed to help your business build the strong foundations it needs to grow.",
   },
   {
+    slug: "sole-traders",
     img: soleTrader,
     heading: "Sole Trader",
     description:
       "Simplicity and complete bookkeeping support for an unbeatable price Being a Sole Trader, running your own business and juggling a number of different balls at once is tough.  This can take its toll on the amount of free time you have to spend on the important things in life.",
   },
   {
+    slug: "limited-company",
     img: limitedCompany,
     heading: "Limited Company",
     description:
       "Expert bookkeeping assistance for your growing business If you are finding Limited Company finances time consuming and a real headache, don't worry, Online Taxtation Limited Company Accounts Service can help.",
   },
   {
+    slug: "small-businesses",
     img: smallBusiness,
     heading: "Small Businesses",
     description:
       "Expert bookkeeping services for small-businesses Our fully managed Small Business Accounting Service frees up valuable time for small business owners as well as removing the stress associated with doing your own accounts, tax and bookkeeping.",
   },
   {
+    slug: "freelancers",
     img: freelancer,
     heading: "Freelancer",
     description:
       "Expert bookkeeping services for self-employed freelancers. As a freelancer your time should be spent growing your business not stressing out over your accounting.  Our expert team of accountants for freelancers will crunch your numbers so you don't have to.",
   },
   {
+    slug: "contractors",
     img: contractors,
     heading: "Contractors",
     description:
@@ -47,10 +53,11 @@ const data = [
 
 const Cards = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 h-1/2">
       {data.map((item, index) => (
         <Card
           key={index}
+          slug={item.slug}
           img={item.img}
           heading={item.heading}
           description={item.description}

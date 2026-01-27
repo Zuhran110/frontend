@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Mission = () => {
   return (
-    <div className="flex flex-row relative bg-linear-to-r from-blue-50 via-blue-50 to-transparent px-16 xl:px-44 py-4 md:py-12 overflow-hidden justify-evenly">
+    <div className="flex flex-col lg:flex-row relative bg-linear-to-r from-blue-50 via-blue-50 to-transparent px-16 xl:px-44 py-4 md:py-12 overflow-hidden justify-evenly">
       <div className="relative container flex flex-col gap-3 w-full xl:w-1/2 justify-center">
         <h1 className="text-2xl lg:text-3xl font-bold mb-4">Our Mission</h1>
         <p className="text-gray-600 text-lg leading-relaxed">
@@ -16,7 +16,7 @@ const Mission = () => {
           ready for growth.
         </p>
       </div>
-      <Image src={mission} alt="mission" />
+      <Image src={mission} alt="mission" className="my-2" />
     </div>
   );
 };
