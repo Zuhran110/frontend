@@ -22,6 +22,59 @@ import WUTWOCORPTAX from "@/assets/servicePgs/whyUsSectionTwoServices/WUTWOCORPT
 import WUTWOPROLL from "@/assets/servicePgs/whyUsSectionTwoServices/WUTWOPROLL.svg";
 import WUTWOVAT from "@/assets/servicePgs/whyUsSectionTwoServices/WUTWOVAT.svg";
 
+//introsection company formation
+import bankingSolution from "@/assets/servicePgs/howItWorks/companyFormationServicesImgs/bankingSolution.svg";
+import busEssentials from "@/assets/servicePgs/howItWorks/companyFormationServicesImgs/busEssentials.svg";
+import complience from "@/assets/servicePgs/howItWorks/companyFormationServicesImgs/complience.svg";
+import efficientRegistration from "@/assets/servicePgs/howItWorks/companyFormationServicesImgs/efficientRegistration.svg";
+
+//introsection bookkeeping
+import experiencedTeamImg from "@/assets/servicePgs/howItWorks/bookkeepingServicesImgs/experiencedTeamImg.svg";
+import HRMCImg from "@/assets/servicePgs/howItWorks/bookkeepingServicesImgs/HRMCImg.svg";
+import tailuredSolutionImg from "@/assets/servicePgs/howItWorks/bookkeepingServicesImgs/tailuredSolutionImg.svg";
+import transparentPricingImg from "@/assets/servicePgs/howItWorks/bookkeepingServicesImgs/transparentPricingImg.svg";
+
+// introsection payroll
+import costEffectiveImg from "@/assets/servicePgs/howItWorks/payrollServicesImgs/CostEffective.svg";
+import expertiseImg from "@/assets/servicePgs/howItWorks/payrollServicesImgs/Expertise.svg";
+import hassleFreeImg from "@/assets/servicePgs/howItWorks/payrollServicesImgs/hassele-free.svg";
+import taxEfficientImg from "@/assets/servicePgs/howItWorks/payrollServicesImgs/taceffient.svg";
+
+// introsection vat
+import affordableImg from "@/assets/servicePgs/howItWorks/vatServicesImgs/affortable.svg";
+import comprehensiveImg from "@/assets/servicePgs/howItWorks/vatServicesImgs/comprehensive.svg";
+import expertSupportImg from "@/assets/servicePgs/howItWorks/vatServicesImgs/expertSupport.svg";
+import quickTurnaroundImg from "@/assets/servicePgs/howItWorks/vatServicesImgs/quikTurnaround.svg";
+
+// introsection companysec
+import annualConfirmationImg from "@/assets/servicePgs/howItWorks/companySec/annualConfirmation.svg";
+import companyRegMainImg from "@/assets/servicePgs/howItWorks/companySec/CompanyRegMain.svg";
+import companySecAssImg from "@/assets/servicePgs/howItWorks/companySec/companysectAss.svg";
+import officerAppointmentsImg from "@/assets/servicePgs/howItWorks/companySec/OfficerAppointments.svg";
+
+// introsection self assessment
+import freelancerImg from "@/assets/servicePgs/howItWorks/selfAssessment/freelancer.svg";
+import investorsImg from "@/assets/servicePgs/howItWorks/selfAssessment/inverstors.svg";
+import landlordImg from "@/assets/servicePgs/howItWorks/selfAssessment/landlord.svg";
+import selfEmployedImg from "@/assets/servicePgs/howItWorks/selfAssessment/selfEmployed.svg";
+
+// introsection corp tax
+import experiencedAccImg from "@/assets/servicePgs/howItWorks/corpTax/experiencedAcc.svg";
+import personalisedTaxImg from "@/assets/servicePgs/howItWorks/corpTax/PersonalisedTax.svg";
+import proactiveTaxImg from "@/assets/servicePgs/howItWorks/corpTax/ProactiveTax.svg";
+import tailoredServImg from "@/assets/servicePgs/howItWorks/corpTax/TalloredServ.svg";
+
+// introsection annual accounts
+import gettingToKnowImg from "@/assets/servicePgs/howItWorks/annualAccount/gettingToKnow.svg";
+import onTimeImg from "@/assets/servicePgs/howItWorks/annualAccount/OnTime.svg";
+import preparingAccountsImg from "@/assets/servicePgs/howItWorks/annualAccount/PrepareingYourAccounts.svg";
+import reviewImg from "@/assets/servicePgs/howItWorks/annualAccount/Review.svg";
+
+// stepbystep
+import bookImg from "@/assets/servicePgs/stepbystep/book.svg";
+import checkboxImg from "@/assets/servicePgs/stepbystep/checkbox.svg";
+import galleryImg from "@/assets/servicePgs/stepbystep/galary.svg";
+
 import Subtract from "@/assets/pricing/Subtract.svg";
 
 const Data = [
@@ -37,6 +90,77 @@ const Data = [
       "Our Non-Resident Company Formation package provides full compliance support and essential services, so you can focus on growing your business while we handle registration, setup, and all the details.",
     paragraph3: "",
     image: onehero,
+    stepbystep: {
+      heading: "Why Choose Us for",
+      highlightedHeading: "Limited Company",
+      headingAgain: " Formation?",
+      description:
+        "Online Taxation goes beyond just registering your business. We offer a complete package to help you succeed, from start to finish.",
+      cards: [
+        {
+          img: bookImg,
+          heading: "Simplified Process",
+          description:
+            "Setting up a limited company in the UK has never been easier. Complete your UK company registration in just minutes, with most applications approved within 1-3 business days. ",
+        },
+        {
+          img: checkboxImg,
+          heading: "Exclusive Benefits: ",
+          description:
+            "Access over £150 worth of free tools and rewards to help kickstart your business journey.",
+        },
+        {
+          img: galleryImg,
+          heading: "Legal Compliance:",
+          description:
+            "Our expert team ensures that every step of your limited company formation complies with Companies House regulations",
+        },
+      ],
+    },
+    // introSection
+    introSection: {
+      heading: "Key Features of Our",
+      highlightedSection: "UK Company Registration",
+      headingagain: "Service",
+      Cards: [
+        {
+          img: efficientRegistration,
+          heading: "Efficient Registration Process",
+          description: "",
+          points: [
+            "Hassle-Free Registration",
+            "Secure Documentation",
+            "Name Check Assistance",
+          ],
+        },
+        {
+          img: busEssentials,
+          heading: "Business Essentials for Startups",
+          description: "",
+          points: [
+            "Free Domain Names",
+            "Marketing Credits",
+            "Business Listings",
+          ],
+        },
+        {
+          img: bankingSolution,
+          heading: "Banking Solutions",
+          description: "",
+          points: ["Business Account Assistance", "Prepaid Credit Card"],
+        },
+        {
+          img: complience,
+          heading: "Compliance and Ongoing Support",
+          description: "",
+          points: [
+            "Virtual Office Services",
+            "Regulatory Support",
+            "Tax Compliance",
+          ],
+        },
+      ],
+    },
     QuizSection: [
       {
         heading: "Why Setup a  UK limited company?",
@@ -125,6 +249,65 @@ const Data = [
     paragraph2:
       "Whether you need online bookkeeping, double-entry accounting, or are searching for bookkeepers near me, our tailored solutions make financial management simple and error-free. We provide clear monthly reports, practical advice, and proactive support to help your business stay on track and maximise efficiency.",
     image: onehero,
+    stepbystep: {
+      heading: "Why Choose Us for ",
+      highlightedHeading: "Bookkeeping Services",
+      headingAgain: " ",
+
+      description:
+        "Online Taxation goes beyond just registering your business. We offer a complete package to help you succeed, from start to finish.",
+      cards: [
+        {
+          img: bookImg,
+          heading: "Accurate Bookkeeping",
+          description:
+            "We manage your daily transactions, maintaining precise ledgers, invoices, and reconciliations using double-entry bookkeeping to keep your records accurate and error-free.",
+        },
+        {
+          img: galleryImg,
+          heading: "Clear Management Reports",
+          description:
+            "Our insightful reports give you full visibility into your business’s financial health, helping you monitor cash flow, plan budgets, and make confident, informed decisions.",
+        },
+        {
+          img: checkboxImg,
+          heading: "Year-End Accounts & Compliance",
+          description:
+            "We prepare and file your year-end accounts on time, ensuring full compliance with UK tax regulations and protecting you from unnecessary HMRC penalties.",
+        },
+      ],
+    },
+    introSection: {
+      heading: "Why Choose US for Your ",
+      highlightedSection: "UK Bookkeeping",
+      headingagain: "Needs?",
+      Cards: [
+        {
+          img: experiencedTeamImg,
+          heading: "Experienced Team",
+          description:
+            "Our experts are highly skilled in double entry bookkeeping and proficient in all major accounting software.",
+        },
+        {
+          img: HRMCImg,
+          heading: "HMRC Compliance",
+          description:
+            "We ensure your financial records are fully compliant with UK regulations, reducing the risk of penalties.",
+        },
+        {
+          img: tailuredSolutionImg,
+          heading: "Tailored Solutions",
+          description:
+            "Our services are customized to meet the specific needs of your business.",
+        },
+        {
+          img: transparentPricingImg,
+          heading: "Transparent Pricing",
+          description:
+            "Enjoy clear, upfront pricing for all services—no hidden fees, just reliable, straightforward bookkeeping.",
+        },
+      ],
+    },
     QuizSection: [
       {
         heading: " What is bookkeeping for 12 months?",
@@ -247,6 +430,58 @@ const Data = [
     paragraph3:
       "With Online Taxation's online payroll services, our team of qualified, experienced accountants takes full control of your payroll, ensuring accuracy, compliance, and peace of mind. We handle everything, so you don't have to.",
     image: threehero,
+    stepbystep: {
+      heading: "How to Register for",
+      highlightedHeading: "PAYE",
+      headingAgain: "with Online Taxation?",
+      description:
+        "Online Taxation goes beyond just registering your business. We offer a complete package to help you succeed, from start to finish.",
+      cards: [
+        {
+          img: galleryImg,
+          heading: "",
+          description:
+            "If you're forming a new company, you can order our PAYE registration service as part of your company formation package.",
+        },
+        {
+          img: bookImg,
+          heading: "",
+          description:
+            "Already have a company? Simply log in to your Online account and select register for payroll from our services, then complete your purchase",
+        },
+      ],
+    },
+    introSection: {
+      heading: "Benefits of Choosing Us for",
+      highlightedSection: " Payroll Service",
+      headingagain: "",
+      Cards: [
+        {
+          img: expertiseImg,
+          heading: "Expertise in Director Payroll",
+          description:
+            "Our experienced team specialises in payroll solutions for company directors, providing expert advice and ongoing support tailored to your business structure.",
+        },
+        {
+          img: costEffectiveImg,
+          heading: "Cost-Effective Payroll Pricing",
+          description:
+            "Enjoy affordable payroll services with all essential payroll processes included—no hidden fees.",
+        },
+        {
+          img: taxEfficientImg,
+          heading: "Tax Efficiency",
+          description:
+            "Using a payroll system can help improve tax efficiency compared to taking dividends only.",
+        },
+        {
+          img: hassleFreeImg,
+          heading: "Hassle-Free Setup",
+          description:
+            "Our simple payroll setup process is transparent, with no hidden fees or surprise charges.",
+        },
+      ],
+    },
     QuizSection: [
       {
         heading: "How to register for PAYE?",
@@ -368,6 +603,58 @@ const Data = [
       "Make VAT registration simple with Online Taxation's expert-led VAT registration service. Whether you're registering voluntarily or because your business has reached the threshold, our streamlined process ensures full compliance with HMRC VAT online registration requirements—saving you time and reducing stress.",
     paragraph2: "",
     image: fourhero,
+    stepbystep: {
+      heading: "When Should You ",
+      highlightedHeading: "Register for VAT",
+      headingAgain: " Online?",
+      description:
+        "Businesses must register for VAT online if their annual taxable turnover exceeds £85,000. However, voluntary registration can offer strategic benefits even if you don’t meet this threshold.",
+      cards: [
+        {
+          img: galleryImg,
+          heading: "Mandatory Registration Scenarios:",
+          description:
+            "You must register for VAT if your taxable turnover exceeds £85,000 within a 12-month period, if you are a non-UK business selling goods or services to UK customers, or if you expect your business to surpass the VAT threshold within the next 30 days. Timely registration ensures compliance with HMRC VAT regulations and helps you avoid penalties.",
+        },
+        {
+          img: bookImg,
+          heading: "Voluntary VAT Registration Benefits:",
+          description:
+            "Being VAT-registered enhances your business credibility, portraying your company as professional and established. It also allows you to reclaim VAT on business-related expenses, improving your cash flow, and opens the door to new opportunities, as many larger organisations prefer to work with VAT-registered businesses.",
+        },
+      ],
+    },
+    introSection: {
+      heading: "Benefits of Choosing Us for ",
+      highlightedSection: " VAt Service",
+      headingagain: "",
+      Cards: [
+        {
+          img: affordableImg,
+          heading: "Affordable Pricing",
+          description:
+            "Enjoy competitive rates with clear pricing and absolutely no hidden fees.",
+        },
+        {
+          img: quickTurnaroundImg,
+          heading: "Quick Turnaround",
+          description:
+            "Fast processing to ensure you start benefiting from VAT registration quickly.",
+        },
+        {
+          img: expertSupportImg,
+          heading: "Expert Support",
+          description:
+            "Our experienced team ensures a smooth process from registration to VAT filings.",
+        },
+        {
+          img: comprehensiveImg,
+          heading: "Comprehensive Solutions",
+          description:
+            "We assist with everything from registration to filing VAT returns and beyond.",
+        },
+      ],
+    },
     QuizSection: [
       {
         heading: "What is VAT Registration?",
@@ -473,6 +760,37 @@ const Data = [
     paragraph2:
       "As a business ourselves, we understand how crucial regulatory compliance is and how regulations affect a wide range of company activities. With new policies and updates introduced regularly, it can be challenging—especially for new business owners—to stay informed about the latest statutory and regulatory changes. Our expert team ensures you are always up to date, so you can focus on growing your business without worrying about compliance.",
     image: fivehero,
+    introSection: {
+      heading: "What’s Included?",
+      highlightedSection: "",
+      headingagain: "",
+      Cards: [
+        {
+          img: companySecAssImg,
+          heading: "Company secretary assignment",
+          description:
+            "Appointing a company secretary helps your business stay compliant with legal requirements and builds trust with stakeholders.",
+        },
+        {
+          img: companyRegMainImg,
+          heading: "Company register maintenance",
+          description:
+            "'Keeping your company register up-to-date is essential. We ensure your company register is accurately maintained, saving you time and ensuring compliance.'",
+        },
+        {
+          img: annualConfirmationImg,
+          heading: "Annual confirmation statement",
+          description:
+            "We handle the preparation and filing of your annual confirmation statement, ensuring your UK company stays fully compliant with legal requirements.",
+        },
+        {
+          img: officerAppointmentsImg,
+          heading: "Officer appointments and resignations",
+          description:
+            "We manage the appointment and resignation of company officers, ensuring seamless and compliant transitions for your business.",
+        },
+      ],
+    },
     QuizSection: [
       {
         heading: "How long does it take to set up my service?",
@@ -610,6 +928,68 @@ const Data = [
     paragraph2:
       "Submitting your Self Assessment tax return online provides a secure and efficient way to meet your tax obligations, avoiding the hassles of manual filing.",
     image: sixhero,
+    stepbystep: {
+      heading: "Step-by-Step Submission",
+      description:
+        "Submitting your work has never been easier. Just follow our simple step-by-step process to upload your files quickly and securely. Each step guides you smoothly from start to finish, making sure nothing is missed along the way.",
+      cards: [
+        {
+          img: galleryImg,
+          heading: "Gather Relevant Documents",
+          description:
+            "To ensure accurate data entry, compile essential documents like income statements, expense records, bank interest details, and pension contributions. Our checklist can help you organise these documents efficiently.",
+        },
+        {
+          img: bookImg,
+          heading: "Complete Your SA100 Tax Form",
+          description:
+            "Our team assists you in filling out the SA100 tax form accurately, capturing all relevant income and allowable expenses. We’ll advise on any tax reliefs and deductions applicable to maximise your returns and minimise liabilities.",
+        },
+        {
+          img: bookImg,
+          heading: "Receive Confirmation and Stay Updated",
+          description:
+            "After submission, we provide you with confirmation and follow up with any updates from HMRC. Should there be any further actions required, Online Taxation remains by your side to address them promptly.",
+        },
+        {
+          img: checkboxImg,
+          heading: "Online Submission of Self Assessment Tax",
+          description:
+            "Once your form is complete and reviewed, we file your self-assessment tax return online directly to HMRC. By handling this process online, we ensure quicker processing and verification.",
+        },
+      ],
+    },
+    introSection: {
+      heading: "Who Needs to File a",
+      highlightedSection: "Self Assessment",
+      headingagain: "Tax Return?",
+      Cards: [
+        {
+          img: selfEmployedImg,
+          heading: "Self-Employed and Sole Traders",
+          description:
+            "If you run your own business, you must report your income and expenses.",
+        },
+        {
+          img: freelancerImg,
+          heading: "Freelancers",
+          description:
+            "Whether you're working part-time or full-time as a freelancer, Self Assessment is necessary.",
+        },
+        {
+          img: landlordImg,
+          heading: "Landlords",
+          description:
+            "If you earn rental income, you must declare it in your tax return.",
+        },
+        {
+          img: investorsImg,
+          heading: "Investors",
+          description:
+            "Income from savings, dividends, or investments must be reported.",
+        },
+      ],
+    },
     QuizSection: [
       {
         heading: "What is online submission of self assessment tax return?",
@@ -658,6 +1038,19 @@ const Data = [
           "Our team is available to answer your questions and provide tailored advice for your specific tax situation.",
       },
     ],
+    Panelty: {
+      heading: "Avoid Penalties",
+      paragraph: "Missing the",
+      highlightedtext: "January 31st deadline",
+      paraAgain:
+        " for online submissions can result in penalties, starting with an",
+      highlightedtextAgain: " immediate £100 fine",
+      paraAgainAgain:
+        " for late submissions. Penalties increase with further delays. By entrusting",
+      highlightedtextLast: " Online Taxtaion with your self-assessment ",
+      paraLast:
+        "submission, you gain peace of mind that deadlines are met, and penalties are avoided.",
+    },
     ContactUsSection: {
       heading: "Contact Us",
       description:
@@ -723,6 +1116,37 @@ const Data = [
     paragraph2:
       "Corporation Tax is a mandatory tax on the profits of UK-registered limited companies. Every active company must submit a Corporation Tax Return (CT600) to HMRC within 12 months of the financial year-end, while the tax payment itself is due within 9 months and 1 day of the accounting period's end.",
     image: sevenhero,
+    introSection: {
+      heading: "Why Choose Us for Corporation ",
+      highlightedSection: " Tax Filing?",
+      headingagain: "",
+      Cards: [
+        {
+          img: experiencedAccImg,
+          heading: "Experienced Accountants",
+          description:
+            "Our team brings years of expertise in UK tax regulations.",
+        },
+        {
+          img: tailoredServImg,
+          heading: "Tailored Services",
+          description:
+            "We use Nomisma cloud software for real-time tax tracking",
+        },
+        {
+          img: personalisedTaxImg,
+          heading: "Personalised Tax Strategies",
+          description:
+            "Tailored advice to help businesses reduce tax liability legally.",
+        },
+        {
+          img: proactiveTaxImg,
+          heading: "Proactive Tax Planning",
+          description:
+            "We don’t just file your CT600—we help you plan your tax strategy to reduce your overall tax liability.   ",
+        },
+      ],
+    },
     QuizSection: [
       {
         heading: "Who needs to file a corporation tax return?",
@@ -852,6 +1276,37 @@ const Data = [
     paragraph2:
       "Whether you run a small business or a growing enterprise, our annual accounts services are tailored to meet your unique needs. Let us handle your Ltd company accounts so you can focus on running your business with confidence.",
     image: eighthero,
+    introSection: {
+      heading: "Our Simple Process – How It Works",
+      highlightedSection: "",
+      headingagain: "",
+      Cards: [
+        {
+          img: gettingToKnowImg,
+          heading: "Getting to Know You",
+          description:
+            "Our first step is understanding your business and its specific needs. ",
+        },
+        {
+          img: preparingAccountsImg,
+          heading: "Preparing Your Accounts",
+          description:
+            "Using cloud-based accounting systems, we handle every detail, from your balance sheet. ",
+        },
+        {
+          img: reviewImg,
+          heading: "Review & Explain",
+          description:
+            "We don’t just prepare your annual accounts return—we explain them. You’ll understand key figures.",
+        },
+        {
+          img: onTimeImg,
+          heading: "Submitting On Time, Every Time",
+          description:
+            "Timely submission of your company accounts to HMRC and Companies House, ensuring you never miss a deadline.",
+        },
+      ],
+    },
     QuizSection: [
       {
         heading: "What are the annual account? and why i do need them?",

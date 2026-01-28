@@ -22,33 +22,54 @@ const Navbar = () => {
   };
 
   const linkClass = (href) =>
-    isActive(href) ? "text-custom-text font-medium" : "text-gray-500 font-light";
+    isActive(href)
+      ? "text-custom-text font-medium border-b-2 border-custom-text text-center p-2"
+      : "text-gray-500 font-light";
 
   return (
     <>
       {/* Desktop Navbar */}
       <div className="w-full px-16 xl:px-44 py-4 lg:py-8 z-50 bg-linear-to-r from-blue-50 via-blue-50 to-white items-center justify-between hidden lg:flex sticky top-0 border-b border-b-gray-300">
-        <Link href="/" className="navbar-logo cursor-pointer">
-          <img src={logo.src} alt="" />
-        </Link>
-        <div className="navbar-link justify-between items-center flex">
-          <Link href="/" className={`p-1 pr-9 inline-block ${linkClass("/")}`}>
+        <div className="flex-1">
+          <Link href="/" className="navbar-logo cursor-pointer inline-block">
+            <img src={logo.src} alt="Logo" />
+          </Link>
+        </div>
+
+        <div className="navbar-link flex items-center gap-6 xl:gap-10">
+          <Link
+            href="/"
+            className={`p-1 text-center transition-colors ${linkClass("/")}`}
+          >
             Home
           </Link>
-          <Link href="/Pricing" className={`p-1 pr-9 inline-block ${linkClass("/Pricing")}`}>
+          <Link
+            href="/Pricing"
+            className={`p-1 text-center transition-colors ${linkClass("/Pricing")}`}
+          >
             Pricing
           </Link>
-          <Link href="/Service" className={`p-1 pr-9 inline-block ${linkClass("/Service")}`}>
+          <Link
+            href="/Service"
+            className={`p-1 text-center transition-colors ${linkClass("/Service")}`}
+          >
             Services
           </Link>
-          <Link href="/AboutUs" className={`p-1 pr-9 inline-block ${linkClass("/AboutUs")}`}>
+          <Link
+            href="/AboutUs"
+            className={`p-1 text-center transition-colors ${linkClass("/AboutUs")}`}
+          >
             About
           </Link>
-          <Link href="/Contact" className={`p-1 pr-9 inline-block ${linkClass("/Contact")}`}>
+          <Link
+            href="/Contact"
+            className={`p-1 text-center transition-colors ${linkClass("/Contact")}`}
+          >
             Contact
           </Link>
         </div>
-        <div className="flex gap-2">
+
+        <div className="flex-1 flex justify-end items-center gap-2">
           <Email />
           <ContactUsBtn />
         </div>
@@ -71,11 +92,7 @@ const Navbar = () => {
       {/* Mobile & Tablet Menu Dropdown */}
       {menuOpen && (
         <div className="flex lg:hidden flex-col bg-white shadow-lg absolute w-full z-40 px-4 md:px-8 py-4">
-          <Link
-            href="/"
-            className={`p-2 ${linkClass("/")}`}
-            onClick={onClick}
-          >
+          <Link href="/" className={`p-2 ${linkClass("/")}`} onClick={onClick}>
             Home
           </Link>
           <Link
