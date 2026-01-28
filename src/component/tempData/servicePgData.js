@@ -5,6 +5,14 @@ import fivehero from "../../assets/servicePgs/serviceHero/fivehero.svg";
 import sixhero from "../../assets/servicePgs/serviceHero/sixhero.svg";
 import sevenhero from "../../assets/servicePgs/serviceHero/sevenhero.svg";
 import eighthero from "../../assets/servicePgs/serviceHero/eaigthhero.svg";
+// why us section imgs
+import WUANNUAL from "@/assets/servicePgs/WUServices/WUANNUAL.svg";
+import WUBKEEPING from "@/assets/servicePgs/WUServices/WUBKEEPING.svg";
+import WUCOMPSEC from "@/assets/servicePgs/WUServices/WUCOMPSEC.svg";
+import WUCORPTAX from "@/assets/servicePgs/WUServices/WUCORPTAX.svg";
+import WUPAYROLL from "@/assets/servicePgs/WUServices/WUPAYROLL.svg";
+import WUSELF from "@/assets/servicePgs/WUServices/WUSELF.svg";
+import WUVAT from "@/assets/servicePgs/WUServices/WUVAT.svg";
 
 // whyUsSectionTwo IMGS
 import WUTWOBK from "@/assets/servicePgs/whyUsSectionTwoServices/WUTWOBK.svg";
@@ -159,6 +167,38 @@ const Data = [
       description:
         "Let Us take the stress out of managing your finances. Whether you need help with annual bookkeeping or require online bookkeeping solutions, we’re here to simplify your financial processes and keep your business on track.",
     },
+    whyUsSection: [
+      {
+        heading: "Why Digital ",
+        highlightedHeading: "Bookkeeping?",
+        headingAfter: "",
+        paragraph:
+          "Digital bookkeeping is designed for modern businesses that value efficiency, accuracy, and flexibility. By using secure, cloud-based software, we deliver seamless online bookkeeping services that help you work smarter—not harder.",
+        paragraphtwo: "",
+        img: WUBKEEPING,
+        pointers: [
+          {
+            img: Subtract,
+            heading: "Access Your Financial Data Anytime, Anywhere:",
+            point:
+              " Our cloud-based systems provide real-time access to your financial information from any location and on any device.",
+          },
+          {
+            img: Subtract,
+            heading: "Go Paperless:",
+            point:
+              " Eliminate manual paperwork. Your financial records are stored securely in easy-to-use digital platforms, making organization and retrieval simple and fast.",
+          },
+          {
+            img: Subtract,
+            heading: "Automate Routine Tasks:",
+            point:
+              " Automated invoicing, bank reconciliation, and financial reporting reduce human error, save time, and improve overall efficiency",
+          },
+        ],
+        paragraphThree: "",
+      },
+    ],
     whyUsSectionTwo: [
       {
         heading: "Who Can  ",
@@ -244,6 +284,44 @@ const Data = [
       description:
         "Setting up your Payroll scheme can be straightforward with the right support. Our team is here to make the process easy and stress-free, so you can focus on what matters most—growing your business.",
     },
+    whyUsSection: [
+      {
+        heading: "Comprehensive  ",
+        highlightedHeading: "Payroll",
+        headingAfter: "Services",
+        paragraph:
+          "Our complete payroll service covers everything you need for a smooth, compliant payroll process:",
+        paragraphtwo: "",
+        img: WUPAYROLL,
+        pointers: [
+          {
+            img: Subtract,
+            heading: "Accurate Payroll Calculations –",
+            point:
+              " Precise income tax and National Insurance calculations to ensure accuracy every time",
+          },
+          {
+            img: Subtract,
+            heading: "Electronic Payslips –",
+            point:
+              " Secure digital payslips emailed directly to you for easy access and record-keeping",
+          },
+          {
+            img: Subtract,
+            heading: "Monthly HMRC Submissions –",
+            point:
+              " We handle all monthly HMRC payroll returns, keeping you fully compliant.",
+          },
+          {
+            img: Subtract,
+            heading: "Year-End Payroll Processing – ",
+            point:
+              " Preparation and submission of P60s for each director, ensuring all year-end payroll requirements are met.",
+          },
+        ],
+        paragraphThree: "",
+      },
+    ],
     whyUsSectionTwo: [
       {
         heading: "Comprehensive  ",
@@ -322,6 +400,38 @@ const Data = [
       description:
         "Let Us handle your VAT online registration efficiently and accurately. With our expertise, you can focus on growing your business while we ensure compliance with HMRC requirements.",
     },
+    whyUsSection: [
+      {
+        heading: "Why Choose Online Taxation for ",
+        highlightedHeading: "VAT Registration Online?",
+        headingAfter: "",
+        paragraph:
+          "Our professional VAT registration services are designed to make the process fast, simple, and error-free. With Online Taxation, you’ll benefit from:",
+        paragraphtwo: "",
+        img: WUVAT,
+        pointers: [
+          {
+            img: Subtract,
+            heading: "Expert Guidance – ",
+            point:
+              " Our VAT specialists provide support and ensure your registration is accurate.",
+          },
+          {
+            img: Subtract,
+            heading: "Full HMRC Compliance – ",
+            point:
+              " All documentation and filings meet HMRC VAT online regulations, helping you avoid delays or penalties",
+          },
+          {
+            img: Subtract,
+            heading: "Fast Processing – ",
+            point:
+              "Receive your VAT registration number in just 7–10 working days",
+          },
+        ],
+        paragraphThree: "",
+      },
+    ],
     whyUsSectionTwo: [
       {
         heading: "Additional Services for ",
@@ -418,6 +528,38 @@ const Data = [
       description:
         "Once you register your company with us and if you think you need a company secretary to maintain your register and to stay compliant, let us know and we will take care of it for you.",
     },
+    whyUsSection: [
+      {
+        heading: "Why Choose Online Taxataion?",
+        highlightedHeading: "",
+        headingAfter: "",
+        paragraph:
+          "we specialise in helping businesses file their confirmation statements with Companies House. Here's why clients choose us:",
+        paragraphtwo: "",
+        img: WUCOMPSEC,
+        pointers: [
+          {
+            img: Subtract,
+            heading: "Expertise : ",
+            point:
+              "With years of experience, we ensure your filing is done correctly.",
+          },
+          {
+            img: Subtract,
+            heading: "Hassle-Free : ",
+            point:
+              "We take care of everything so you can focus on running your business",
+          },
+          {
+            img: Subtract,
+            heading: "Affordable Packages : ",
+            point:
+              "We offer value-driven services that meet your compliance needs.",
+          },
+        ],
+        paragraphThree: "",
+      },
+    ],
     whyUsSectionTwo: [
       {
         heading: "How Our Service Works",
@@ -521,6 +663,56 @@ const Data = [
       description:
         "Ready to submit your self-assessment tax return with ease and confidence? Reach out to Online Taxation today, and let our professionals guide you through every step of the submission process. With our comprehensive self-assessment service, you can trust that your tax obligations are managed efficiently, timely, and accurately.",
     },
+    whyUsSection: [
+      {
+        heading: "Why Choose Online Taxation?",
+        highlightedHeading: "",
+        headingAfter: "",
+        paragraph:
+          "we specialise in helping businesses file their confirmation statements with Companies House. Here's why clients choose us:",
+        paragraphtwo: "",
+        img: WUSELF,
+        pointers: [
+          {
+            img: Subtract,
+            heading: "Ease of Use :",
+            point:
+              " Our intuitive, user-friendly service guides you through every step of the Self Assessment process. No confusing jargon—just clear, concise instructions",
+          },
+          {
+            img: Subtract,
+            heading: "Accuracy and Compliance :",
+            point:
+              " We meticulously check your return to ensure it meets all of HMRC's requirements. With us, you can be confident that your tax return is error-free and fully compliant.",
+          },
+          {
+            img: Subtract,
+            heading: "Accuracy and Compliance :",
+            point:
+              " We carefully review your return to ensure it meets all HMRC requirements. With us, you can be confident your tax return is accurate and fully compliant.",
+          },
+          {
+            img: Subtract,
+            heading: "Security :",
+            point:
+              " Your personal and financial data is protected with the latest encryption technology, keeping your information safe at all times.",
+          },
+          {
+            img: Subtract,
+            heading: "Expert Support :",
+            point:
+              " Have questions? Our team of experienced tax professionals is ready to provide guidance and help resolve any issues",
+          },
+          {
+            img: Subtract,
+            heading: "Timeliness :",
+            point:
+              " We make sure your Self Assessment is filed on time, every time—avoiding penalties and keeping you fully compliant with ease",
+          },
+        ],
+        paragraphThree: "",
+      },
+    ],
   },
   // corporation-tax
   {
@@ -583,6 +775,38 @@ const Data = [
       description:
         "Let us handle your CT600 filing and corporation tax matters with precision and expertise. Contact us today to discuss how we can help your business stay compliant and maximise tax savings.",
     },
+    whyUsSection: [
+      {
+        heading: "Maximise Savings with Professional Tax Planning",
+        highlightedHeading: "",
+        headingAfter: "",
+        paragraph:
+          "Corporation tax planning isn't just about compliance—it’s about maximising tax efficiency. We offers bespoke tax-saving strategies, including:",
+        paragraphtwo: "",
+        img: WUCORPTAX,
+        pointers: [
+          {
+            img: Subtract,
+            heading: "Utilisation of Allowable Deductions :",
+            point:
+              " We help you claim valid business expenses to lower taxable profits.",
+          },
+          {
+            img: Subtract,
+            heading: "Handling of Director’s Loan Tax (S455) :",
+            point:
+              " Expert management of complex tax areas to ensure compliance.",
+          },
+          {
+            img: Subtract,
+            heading: "Capital Allowances & R&D Tax Credits :",
+            point:
+              " Maximising reliefs for business investments and research & development",
+          },
+        ],
+        paragraphThree: "",
+      },
+    ],
     whyUsSectionTwo: [
       {
         heading: "Penalties for Late CT600 Filing",
@@ -666,6 +890,37 @@ const Data = [
       description:
         "Stop worrying about the complexity of preparing UK company accounts. Let Online Taxtaion handle your annual accounts services while you focus on growing your business. Contact us today for a free consultation and experience the difference our expertise can make.",
     },
+    whyUsSection: [
+      {
+        heading: "Why Choose Us for Your UK Annual Accounts?",
+        highlightedHeading: "",
+        headingAfter: "",
+        paragraph: "",
+        paragraphtwo: "",
+        img: WUANNUAL,
+        pointers: [
+          {
+            img: Subtract,
+            heading: "Compliance You Can Trust :",
+            point:
+              " We manage everything from preparing your financial statements to submitting them to HMRC and Companies House. Our experts stay up to date with the latest regulations, ensuring your statutory accounts and year-end accounting are fully compliant and filed correctly",
+          },
+          {
+            img: Subtract,
+            heading: "No Hidden Costs :",
+            point:
+              " We believe in complete transparency. Our annual accounts services use a fixed pricing model—what we quote is what you pay, with no hidden fees",
+          },
+          {
+            img: Subtract,
+            heading: "Expert Advice, Anytime :",
+            point:
+              " Your company’s annual accounts aren’t just a legal requirement—they’re an opportunity to understand your financial health. Beyond compliance, we provide actionable advice to help reduce tax liabilities and uncover growth opportunities.",
+          },
+        ],
+        paragraphThree: "",
+      },
+    ],
     whyUsSectionTwo: [
       {
         heading: "Annual Accounts Preparation Service",
