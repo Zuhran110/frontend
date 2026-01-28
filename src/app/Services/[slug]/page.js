@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import Hero from "@/component/services/hero/Hero";
 import servicePgData from "@/component/tempData/servicePgData";
+
+import WhyUsTwo from "@/component/services/whyUstwo/WhyUsTwo";
 import Quiz from "@/component/services/quiz/Quiz";
 import Contacts from "@/component/services/contactUs/Contacts";
 
@@ -22,6 +24,7 @@ export default async function ServicesPage({ params }) {
     <>
       <Hero data={data} />
 
+      <WhyUsTwo data={data.whyUsSectionTwo} />
       <Contacts data={data.ContactUsSection} />
       <Quiz data={data.QuizSection} />
     </>

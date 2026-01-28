@@ -6,6 +6,14 @@ import sixhero from "../../assets/servicePgs/serviceHero/sixhero.svg";
 import sevenhero from "../../assets/servicePgs/serviceHero/sevenhero.svg";
 import eighthero from "../../assets/servicePgs/serviceHero/eaigthhero.svg";
 
+// whyUsSectionTwo IMGS
+import WUTWOBK from "@/assets/servicePgs/whyUsSectionTwoServices/WUTWOBK.svg";
+import WUTWOCF from "@/assets/servicePgs/whyUsSectionTwoServices/WUTWOCF.svg";
+import WUTWOCOMSEC from "@/assets/servicePgs/whyUsSectionTwoServices/WUTWOCOMSEC.svg";
+import WUTWOCORPTAX from "@/assets/servicePgs/whyUsSectionTwoServices/WUTWOCORPTAX.svg";
+import WUTWOPROLL from "@/assets/servicePgs/whyUsSectionTwoServices/WUTWOPROLL.svg";
+import WUTWOVAT from "@/assets/servicePgs/whyUsSectionTwoServices/WUTWOVAT.svg";
+
 import Subtract from "@/assets/pricing/Subtract.svg";
 
 const Data = [
@@ -68,6 +76,37 @@ const Data = [
       description:
         "Setting up a limited company in the UK is quick, reliable, and rewarding. Take the first step toward success today by starting your UK company registration journey with us.",
     },
+    whyUsSectionTwo: [
+      {
+        heading: "The Advantage in Setting Up a ",
+        highlightedHeading: "Limited Company ",
+        headingAfter: "in the UK",
+        paragraph:
+          "There’s no turnover threshold—everyone from one-person freelancers to micro start-ups can trade through a company. You don’t need to be VAT-registered either; register only when turnover (or choice) dictates.",
+        paragraphtwo: "Three groups that gain the most:",
+        img: WUTWOCF,
+        pointers: [
+          {
+            img: Subtract,
+            heading: "Tailored for UK Residents: ",
+            point:
+              "Our services are specifically designed for UK-based entrepreneurs, ensuring compliance with local regulations and administrative requirements.",
+          },
+          {
+            img: Subtract,
+            heading: "Fast and Reliable Service: ",
+            point:
+              "With Us, your limited company formation is completed in as little as 1-3 business days. Same-day registration is also available for urgent needs.",
+          },
+          {
+            img: Subtract,
+            heading: "Expert Guidance: ",
+            point:
+              "Whether it’s navigating legal procedures or ensuring proper documentation, our team is here to guide you every step of the way.",
+          },
+        ],
+      },
+    ],
   },
   // bookkeeping-services
   {
@@ -120,6 +159,43 @@ const Data = [
       description:
         "Let Us take the stress out of managing your finances. Whether you need help with annual bookkeeping or require online bookkeeping solutions, we’re here to simplify your financial processes and keep your business on track.",
     },
+    whyUsSectionTwo: [
+      {
+        heading: "Who Can  ",
+        highlightedHeading: "Benefit",
+        headingAfter: "from Our Bookkeeping Services?",
+        paragraph:
+          "We provide tailored bookkeeping solutions to support businesses of all sizes and structures:",
+        paragraphtwo: "",
+        img: WUTWOBK,
+        pointers: [
+          {
+            img: Subtract,
+            heading: "Sole Traders",
+            point:
+              "Streamline your finances and stay on top of accurate, timely filings—so you can focus on growing your business with confidence. ",
+          },
+          {
+            img: Subtract,
+            heading: "UK Limited Companies",
+            point:
+              "Our comprehensive bookkeeping services help ensure full compliance with UK tax laws and regulations, reducing the risk of errors, fines, or penalties.",
+          },
+          {
+            img: Subtract,
+            heading: "Partnerships & LLPs",
+            point:
+              "Benefit from customized double-entry bookkeeping solutions designed to manage partnership finances efficiently and support smooth day-to-day operations.",
+          },
+          {
+            img: Subtract,
+            heading: "Contractors & Freelancers",
+            point:
+              "Ideal for professionals on the move, our online bookkeeping services give you the flexibility to manage your finances anytime, anywhere.",
+          },
+        ],
+      },
+    ],
   },
   // payroll-services
   {
@@ -168,6 +244,43 @@ const Data = [
       description:
         "Setting up your Payroll scheme can be straightforward with the right support. Our team is here to make the process easy and stress-free, so you can focus on what matters most—growing your business.",
     },
+    whyUsSectionTwo: [
+      {
+        heading: "Comprehensive  ",
+        highlightedHeading: "Payroll",
+        headingAfter: "Services",
+        paragraph:
+          "Our complete payroll service covers everything you need for a smooth, compliant payroll process:",
+        paragraphtwo: "",
+        img: WUTWOPROLL,
+        pointers: [
+          {
+            img: Subtract,
+            heading: "Accurate Payroll Calculations - ",
+            point:
+              "Precise income tax and National Insurance calculations to ensure accuracy every time",
+          },
+          {
+            img: Subtract,
+            heading: "Electronic Payslips – ",
+            point:
+              "Secure digital payslips emailed directly to you for easy access and record-keeping",
+          },
+          {
+            img: Subtract,
+            heading: "Monthly HMRC Submissions – ",
+            point:
+              "We handle all monthly HMRC payroll returns, keeping you fully compliant.",
+          },
+          {
+            img: Subtract,
+            heading: "Year-End Payroll Processing – ",
+            point:
+              "Preparation and submission of P60s for each director, ensuring all year-end payroll requirements are met.",
+          },
+        ],
+      },
+    ],
   },
   // vat-services
   {
@@ -209,6 +322,37 @@ const Data = [
       description:
         "Let Us handle your VAT online registration efficiently and accurately. With our expertise, you can focus on growing your business while we ensure compliance with HMRC requirements.",
     },
+    whyUsSectionTwo: [
+      {
+        heading: "Additional Services for ",
+        highlightedHeading: "VAT",
+        headingAfter: "Compliance",
+        paragraph:
+          "There’s no turnover threshold—everyone from one-person freelancers to micro start-ups can trade through a company. You don’t need to be VAT-registered either; register only when turnover (or choice) dictates.",
+        paragraphtwo: "Three groups that gain the most:",
+        img: WUTWOVAT,
+        pointers: [
+          {
+            img: Subtract,
+            heading: "Flat Rate Scheme – ",
+            point:
+              "Simplify VAT payments with a fixed rate, ideal for businesses with turnover under £150,000",
+          },
+          {
+            img: Subtract,
+            heading: "Annual Accounting Scheme – ",
+            point:
+              "Reduce administrative tasks by submitting one VAT return per year for businesses with turnover under £1.35 million",
+          },
+          {
+            img: Subtract,
+            heading: "Online VAT Account Support – ",
+            point:
+              "Get help setting up and managing your HMRC VAT online account for easy submissions and compliance.",
+          },
+        ],
+      },
+    ],
   },
   // company-secretary
   {
@@ -274,6 +418,46 @@ const Data = [
       description:
         "Once you register your company with us and if you think you need a company secretary to maintain your register and to stay compliant, let us know and we will take care of it for you.",
     },
+    whyUsSectionTwo: [
+      {
+        heading: "How Our Service Works",
+        highlightedHeading: "",
+        headingAfter: "",
+        paragraph: "",
+        paragraphtwo: "",
+        img: WUTWOCOMSEC,
+        pointers: [
+          {
+            img: Subtract,
+            heading: "Get in Touch: ",
+            point: "Complete the order form, checkout, and make your payment",
+          },
+          {
+            img: Subtract,
+            heading: "Provide Additional Information (if needed):",
+            point: " If we need any extra details, we’ll contact you by email.",
+          },
+          {
+            img: Subtract,
+            heading: "Welcome Email: ",
+            point:
+              "You’ll receive a welcome email with your dedicated account manager’s contact details and a guide to your service.",
+          },
+          {
+            img: Subtract,
+            heading: "Register Management: ",
+            point:
+              "We prepare and securely store your company registers, which are available whenever you need them.",
+          },
+          {
+            img: Subtract,
+            heading: "Ongoing Support: ",
+            point:
+              "Your account manager is always available to answer questions or assist with updates and change",
+          },
+        ],
+      },
+    ],
   },
   // self-assessment
   {
@@ -399,6 +583,41 @@ const Data = [
       description:
         "Let us handle your CT600 filing and corporation tax matters with precision and expertise. Contact us today to discuss how we can help your business stay compliant and maximise tax savings.",
     },
+    whyUsSectionTwo: [
+      {
+        heading: "Penalties for Late CT600 Filing",
+        highlightedHeading: "",
+        headingAfter: "",
+        paragraph:
+          "Missing the corporation tax filing deadline can result in escalating penalties:",
+        paragraphtwo: "",
+        img: WUTWOCORPTAX,
+        pointers: [
+          {
+            img: Subtract,
+            heading: "1 day late: £100 fine",
+            point: " ",
+          },
+          {
+            img: Subtract,
+            heading: "3 months late: Additional £100 fine",
+            point: " ",
+          },
+          {
+            img: Subtract,
+            heading:
+              "6 months late: HMRC estimates your bill and imposes a 10% penalty on the estimate",
+            point: " ",
+          },
+          {
+            img: Subtract,
+            heading:
+              "12 months late: An extra 10% penalty on the estimated bill",
+            point: " ",
+          },
+        ],
+      },
+    ],
   },
   // annual-accounts
   {
@@ -447,6 +666,49 @@ const Data = [
       description:
         "Stop worrying about the complexity of preparing UK company accounts. Let Online Taxtaion handle your annual accounts services while you focus on growing your business. Contact us today for a free consultation and experience the difference our expertise can make.",
     },
+    whyUsSectionTwo: [
+      {
+        heading: "Annual Accounts Preparation Service",
+        highlightedHeading: "",
+        headingAfter: "",
+        paragraph:
+          "Our year-end accounting process covers a full review of your financial records, adjustments to meet accounting standards, and preparation of final accounts, ensuring accuracy and compliance.",
+        paragraphtwo: "",
+        img: WUTWOVAT,
+        pointers: [
+          {
+            img: Subtract,
+            heading: "Balance Sheet – ",
+            point:
+              "Displays your company’s assets, liabilities, and overall financial position.",
+          },
+          {
+            img: Subtract,
+            heading: "Profit and Loss Account – ",
+            point:
+              "Details your financial performance over the year, showing profits or losses.",
+          },
+          {
+            img: Subtract,
+            heading: "Director’s Report – ",
+            point:
+              "For larger companies, summarises management activities for shareholders.",
+          },
+          {
+            img: Subtract,
+            heading: "Notes to the Accounts – ",
+            point:
+              "Provides additional context to explain financial figures clearly.",
+          },
+          {
+            img: Subtract,
+            heading: "Accountants or Auditors Report –",
+            point:
+              "Offers professional insight into your company’s financial health.",
+          },
+        ],
+      },
+    ],
   },
 ];
 
