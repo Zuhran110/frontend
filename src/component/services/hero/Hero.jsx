@@ -6,7 +6,7 @@ const Hero = ({ data }) => {
   const imageSrc = data.image?.src || data.image;
 
   return (
-    <div className="relative bg-linear-to-r from-blue-50 via-blue-50 to-transparent px-8 md:px-16 xl:px-44 py-8 md:py-16 overflow-hidden">
+    <div className="relative bg-linear-to-r from-blue-50 via-blue-50 to-transparent px-3 md:px-16 xl:px-44 py-8 md:py-16 overflow-hidden">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16">
         {/* left text */}
         <div className="flex-1 max-w-xl">

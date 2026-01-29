@@ -3,8 +3,8 @@ import GetStarted from "@/component/shared/form/GetStarted";
 
 const Testimonial = () => {
   return (
-    <div className="w-full px-16 xl:px-44 py-4 md:py-12 z-50 bg-linear-to-r from-blue-50 via-blue-50 to-white items-center justify-evenly">
-      <div className="flex flex-row items-center w-full gap-4 text-gray-300">
+    <div className="w-full px-3 md:px-16 xl:px-44 py-4 md:py-12 z-50 bg-linear-to-r from-blue-50 via-blue-50 to-white items-center justify-evenly">
+      <div className="flex flex-row items-center w-full gap-4 text-gray-300 pb-3 md:pb-9 2xl:pb-12">
         <p className="whitespace-nowrap">Testimonial:</p>
         <hr className="grow border-t border-gray-300" />
       </div>
@@ -16,7 +16,9 @@ const Testimonial = () => {
           <Cards />
         </div>
 
-        <GetStarted />
+        <div className="w-full md:w-1/2 xl:w-1/3 py-3 md:py-0">
+          <GetStarted />
+        </div>
       </div>
     </div>
   );

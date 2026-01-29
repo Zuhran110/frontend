@@ -7,7 +7,7 @@ const WhyUsTwo = ({ data }) => {
   const section = data[0];
 
   return (
-    <div className="w-full px-4 md:px-16 xl:px-44 py-4 md:py-12 bg-linear-to-r from-blue-50 via-blue-50 to-white flex flex-col lg:flex-row justify-evenly">
+    <div className="w-full px-3 md:px-16 xl:px-44 py-4 md:py-12 bg-linear-to-r from-blue-50 via-blue-50 to-white flex flex-col-reverse md:flex-col lg:flex-row justify-evenly">
       <Image src={section.img} alt="img" />
       <div className="w-full md:w-1/2 2xl:w-1/3 flex flex-col justify-center">
         <h1 className="text-2xl md:text-4xl font-semibold text-custom-bg">

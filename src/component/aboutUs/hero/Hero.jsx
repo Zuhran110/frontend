@@ -7,7 +7,7 @@ import Cards from "./subComp/Cards";
 
 const Hero = () => {
   return (
-    <div className="relative bg-linear-to-r from-blue-50 via-blue-50 to-transparent px-16 xl:px-44 py-4 md:py-12 overflow-hidden ">
+    <div className="relative bg-linear-to-r from-blue-50 via-blue-50 to-transparent px-3 md:px-16 xl:px-44 py-4 md:py-12 overflow-hidden ">
       <div className="flex flex-col lg:flex-row  justify-between  items-center lg:items-start">
         <div className="relative container flex flex-col gap-10 lg:gap-16 w-full  xl:w-1/2 justify-center">
           <div className="flex flex-col">

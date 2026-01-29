@@ -69,24 +69,54 @@ const data = [
       "Welcome to online Taxation, your ultimate solution for limited company formation and seamless UK company registration",
   },
 ];
-
 const Cards = () => {
   return (
-    <section className="py-16 bg-transparent">
-      <div className="mx-auto px-16">
+    <section className="py-16 bg-transparent overflow-hidden">
+      {/* FIX 1: Responsive Padding 
+          Using px-4 on mobile and px-16 only on large screens 
+      */}
+      <div className="mx-auto px-4 md:px-10 lg:px-16">
         <Splide
           options={{
             type: "loop",
+            perPage: 4,
+            perMove: 1, // FIX 2: Better control during transitions
+            gap: "1.5rem",
+            pagination: false,
+            arrows: true,
             drag: "free",
             snap: true,
-            perPage: 4,
-            gap: "1.5rem",
-            autoHeight: false,
+            // Arrows can be hard to click on mobile if they overlap
+            arrows: true,
+
+            breakpoints: {
+              1280: {
+                perPage: 3,
+                gap: "1rem",
+              },
+              1024: {
+                perPage: 2, // Dropping to 2 earlier looks better on tablets
+                gap: "1rem",
+              },
+              768: {
+                perPage: 2,
+                gap: "1rem",
+                arrows: false, // Cleaner for touch devices
+              },
+              640: {
+                perPage: 1,
+                gap: "0.5rem",
+                padding: { right: "2rem" }, // Shows a peek of the next card
+                arrows: false,
+              },
+            },
           }}
           aria-label="Services"
         >
           {data.map((item, index) => (
-            <SplideSlide key={index} className="h-auto">
+            <SplideSlide key={index} className="pb-8">
+              {" "}
+              {/* Added padding for card shadows */}
               <Card
                 img={item.img}
                 heading={item.heading}

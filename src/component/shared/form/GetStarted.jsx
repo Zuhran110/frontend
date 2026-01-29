@@ -15,7 +15,7 @@ const GetStarted = () => {
     console.log(data);
   };
   return (
-    <div className="bg-custom-bg text-white rounded-2xl shadow-xl p-6 md:p-8 relative z-10 flex flex-col items-center gap-4 w-full md:w-1/2 xl:w-1/3">
+    <div className="bg-custom-bg text-white rounded-2xl shadow-xl p-6 md:p-8 relative z-10 flex flex-col items-center gap-4 ">
       <Image src={group} alt="group" />
       <h1 className="text-2xl md:text-3xl  font-semibold">Get Started</h1>
       <form

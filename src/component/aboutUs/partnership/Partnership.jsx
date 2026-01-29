@@ -3,7 +3,7 @@ import PartnershipImg from "@/assets/aboutUs/partnership.svg";
 
 const Partnership = () => {
   return (
-    <div className="bg-linear-to-r from-blue-50 via-blue-50 to-transparent px-16 xl:px-44 py-4 md:py-12 ">
+    <div className="bg-linear-to-r from-blue-50 via-blue-50 to-transparent px-3 md:px-16 xl:px-44 py-4 md:py-12 ">
       {/* Header Section */}
       <div className="bg-custom-bg rounded-2xl shadow-lg">
         <div className="text-center text-white pt-12 pb-8 px-6 ">
@@ -19,7 +19,7 @@ const Partnership = () => {
         </div>
 
         {/* Middle Section with Card and Image */}
-        <div className="flex flex-col lg:flex-row items-center justify-evenly gap-8 px-6  py-8">
+        <div className="flex flex-col lg:flex-row items-center justify-evenly gap-4 md:gap-8 px-2 md:px-6 py-3 md:py-8">
           {/* Left Card */}
           <div className="  p-8 text-white max-w-xl w-full">
             <h2 className="text-lg md:text-xl font-bold text-white mb-4">

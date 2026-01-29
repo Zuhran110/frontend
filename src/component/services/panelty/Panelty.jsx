@@ -14,7 +14,7 @@ const Panelty = ({ data }) => {
     highlightedtextLast,
   } = data;
   return (
-    <div className="flex flex-col w-full px-16 xl:px-44 py-4 lg:py-8 z-50 gap-4 bg-linear-to-r from-blue-50 via-blue-50 to-white items-center justify-between">
+    <div className="flex flex-col w-full px-3 md:px-16 xl:px-44 py-4 lg:py-8 z-50 gap-4 bg-linear-to-r from-blue-50 via-blue-50 to-white items-center justify-between">
       <h1 className="text-center text-custom-text text-2xl md:text-3xl 2xl:text-4xl ">
         {heading}
       </h1>

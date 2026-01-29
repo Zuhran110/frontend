@@ -8,7 +8,7 @@ const Introduction = ({ data }) => {
   const { heading, highlightedSection, headingagain, Cards: cardsData } = data;
 
   return (
-    <section className="px-8 md:px-16 xl:px-44 py-12 md:py-20 bg-linear-to-r from-blue-50 via-blue-50 to-white">
+    <section className="px-3 md:px-16 xl:px-44 py-12 md:py-20 bg-linear-to-r from-blue-50 via-blue-50 to-white">
       <div className="container mx-auto flex flex-col items-center">
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12 text-custom-bg">

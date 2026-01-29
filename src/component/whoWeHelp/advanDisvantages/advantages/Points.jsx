@@ -8,7 +8,7 @@ const Points = ({ data }) => {
   const section = data[0];
 
   return (
-    <div className="grid grid-cols-1 grid-rows-[1fr_3fr]">
+    <div className="grid grid-cols-1 md:grid-rows-[1fr_3fr] gap-4">
       <h2 className="text-2xl lg:text-4xl  text-custom-text ">
         {section.heading}
       </h2>

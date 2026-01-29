@@ -33,7 +33,7 @@ const Card = ({ slug, img, heading, description }) => {
         <p className="text-gray-600 text-sm leading-relaxed">{description}</p>
         <Link
           href={`/WhoWeHelp/${slug}`}
-          className="bg-custom-bg text-white px-8 py-2 mt-3 font-semibold border-2 rounded-lg border-transparent hidden md:flex hover:opacity-90 transition-opacity"
+          className="bg-custom-bg text-white px-8 py-2 mt-3 font-semibold border-2 rounded-lg border-transparent hover:opacity-90 transition-opacity"
         >
           Find Out More
         </Link>

@@ -7,8 +7,8 @@ const Hero = ({ data }) => {
     <div className="relative bg-linear-to-r from-blue-50 via-blue-50 to-transparent px-8 md:px-16 xl:px-44 py-8 md:py-16 overflow-hidden">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16">
         {/* left text */}
-        <div className="flex-1 max-w-xl">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-6 text-custom-text">
+        <div className="flex-1 max-w-xl ">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-6 text-custom-text text-center md:text-start">
             {data.title}
           </h1>
 
@@ -36,7 +36,7 @@ const Hero = ({ data }) => {
               ))}
             </ul>
           )}
-          <div className="w-full md:w-1/2 2xl:w-1/3">
+          <div className="w-full md:w-1/2 2xl:w-1/3 flex justify-center md:justify-start ">
             <ContactUsBtn />
           </div>
         </div>

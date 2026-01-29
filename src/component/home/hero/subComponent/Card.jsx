@@ -4,17 +4,29 @@ import imageFour from "@/assets/home/hero/OnlineTaxation/imageFour.svg";
 const Card = () => {
   return (
     <div className="border border-transparent rounded-2xl bg-custom-bg flex flex-col md:flex-row text-gray-100 justify-between items-center px-16  py-4 md:py-8 my-4 md:my-8 ">
-      <div className="text-2xl md:text-3xl">
+      <div className="text-2xl md:text-3xl text-center md:text-start">
         {/* left text  */}
         <h1>We specialize in the following sections</h1>
       </div>
-      <div className="flex flex-col md:flex-row ">
+      <div className="flex flex-row gap-2">
         {/* rigth section  */}
-        <img src={imageOne.src} alt="" />
+        <img
+          src={imageOne.src}
+          alt=""
+          className="w-16 h-16 md:w-auto md:h-auto"
+        />
 
-        <img src={imageThree.src} alt="" />
+        <img
+          src={imageThree.src}
+          alt=""
+          className="w-18 h-18 md:w-auto md:h-auto"
+        />
 
-        <img src={imageFour.src} alt="" />
+        <img
+          src={imageFour.src}
+          alt=""
+          className="w-16 h-16 md:w-auto md:h-auto"
+        />
       </div>
     </div>
   );

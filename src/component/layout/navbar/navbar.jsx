@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <div className="w-full px-16 xl:px-44 py-4 lg:py-8 z-50 bg-linear-to-r from-blue-50 via-blue-50 to-white items-center justify-between hidden lg:flex sticky top-0 border-b border-b-gray-300">
+      <div className="w-full px-3 md:px-16 xl:px-44 py-4 lg:py-8 z-50 bg-linear-to-r from-blue-50 via-blue-50 to-white items-center justify-between hidden lg:flex sticky top-0 border-b border-b-gray-300">
         <div className="flex-1">
           <Link href="/" className="navbar-logo cursor-pointer inline-block">
             <img src={logo.src} alt="Logo" />
@@ -76,59 +76,65 @@ const Navbar = () => {
       </div>
 
       {/* Mobile & Tablet Navbar */}
-      <div className="w-full px-4 md:px-8 py-4 z-50 bg-linear-to-r from-blue-50 via-blue-50 to-white items-center justify-between flex lg:hidden sticky top-0 border-b border-b-gray-300">
-        <Link href="/" className="navbar-logo cursor-pointer">
-          <img src={logo.src} alt="" />
-        </Link>
-        <div className="cursor-pointer" onClick={onClick}>
-          <img
-            src={menuOpen ? closeMenu.src : HamburgerMenu.src}
-            alt={menuOpen ? "Close Menu" : "Menu"}
-            className="w-6 h-auto block"
-          />
-        </div>
-      </div>
-
-      {/* Mobile & Tablet Menu Dropdown */}
-      {menuOpen && (
-        <div className="flex lg:hidden flex-col bg-white shadow-lg absolute w-full z-40 px-4 md:px-8 py-4">
-          <Link href="/" className={`p-2 ${linkClass("/")}`} onClick={onClick}>
-            Home
+      <nav className="sticky top-0 z-50 w-full lg:hidden">
+        <div className="w-full px-4 md:px-8 py-4 z-50 bg-linear-to-r from-blue-50 via-blue-50 to-white items-center justify-between flex lg:hidden sticky top-0 border-b border-b-gray-300">
+          <Link href="/" className="navbar-logo cursor-pointer">
+            <img src={logo.src} alt="" />
           </Link>
-          <Link
-            href="/Pricing"
-            className={`p-2 ${linkClass("/Pricing")}`}
-            onClick={onClick}
-          >
-            Pricing
-          </Link>
-          <Link
-            href="/Service"
-            className={`p-2 ${linkClass("/Service")}`}
-            onClick={onClick}
-          >
-            Services
-          </Link>
-          <Link
-            href="/AboutUs"
-            className={`p-2 ${linkClass("/AboutUs")}`}
-            onClick={onClick}
-          >
-            About
-          </Link>
-          <Link
-            href="/Contact"
-            className={`p-2 ${linkClass("/Contact")}`}
-            onClick={onClick}
-          >
-            Contact
-          </Link>
-          <div className="flex gap-2 mt-4">
-            <Email />
-            <ContactUsBtn />
+          <div className="cursor-pointer" onClick={onClick}>
+            <img
+              src={menuOpen ? closeMenu.src : HamburgerMenu.src}
+              alt={menuOpen ? "Close Menu" : "Menu"}
+              className="w-6 h-auto block"
+            />
           </div>
         </div>
-      )}
+
+        {/* Mobile & Tablet Menu Dropdown */}
+        {menuOpen && (
+          <div className="flex lg:hidden flex-col bg-white shadow-lg absolute w-full z-40 px-4 md:px-8 py-4">
+            <Link
+              href="/"
+              className={`p-2 ${linkClass("/")}`}
+              onClick={onClick}
+            >
+              Home
+            </Link>
+            <Link
+              href="/Pricing"
+              className={`p-2 ${linkClass("/Pricing")}`}
+              onClick={onClick}
+            >
+              Pricing
+            </Link>
+            <Link
+              href="/Service"
+              className={`p-2 ${linkClass("/Service")}`}
+              onClick={onClick}
+            >
+              Services
+            </Link>
+            <Link
+              href="/AboutUs"
+              className={`p-2 ${linkClass("/AboutUs")}`}
+              onClick={onClick}
+            >
+              About
+            </Link>
+            <Link
+              href="/Contact"
+              className={`p-2 ${linkClass("/Contact")}`}
+              onClick={onClick}
+            >
+              Contact
+            </Link>
+            <div className="flex gap-2 mt-4">
+              <Email />
+              <ContactUsBtn />
+            </div>
+          </div>
+        )}
+      </nav>
     </>
   );
 };

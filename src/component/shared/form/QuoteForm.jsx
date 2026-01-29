@@ -29,12 +29,9 @@ const QuoteForm = ({ onSuccess }) => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative flex items-center justify-center h-full">
       {/* Form Card */}
-      <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8 relative z-10">
-        <h2 className="text-custom-bg text-xl md:text-3xl font-bold mb-6">
-          Quick <span className="text-custom-text"> Quote </span>
-        </h2>
+      <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8 w-full flex flex-col justify-center">
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col items-center "
@@ -95,18 +92,33 @@ const QuoteForm = ({ onSuccess }) => {
 
           <div className="mb-4 w-full md:w-2/3">
             <select
-              className="w-full p-3 bg-white border border-gray-300 rounded text-sm focus:border-indigo-600 focus:ring-2 focus:ring-indigo-300 outline-none"
+              className="w-full appearance-none p-3 bg-white border border-gray-300 rounded text-sm text-gray-700 
+               focus:border-indigo-600 focus:ring-4 focus:ring-custom-bg/10 outline-none transition-all
+               cursor-pointer disabled:bg-gray-50 disabled:text-gray-400"
               {...register("companyTurnover", {
                 required: "Please select a turnover",
               })}
+              defaultValue=""
             >
-              <option value="" disabled>
+              <option value="" disabled className="text-gray-400">
                 Select Company Turnover
               </option>
-              <option value="under_50k">Under £50,000</option>
-              <option value="50k_150k">£50,000 - £150,000</option>
-              <option value="150k_500k">£150,000 - £500,000</option>
-              <option value="over_500k">Over £500,000</option>
+
+              <option value="under_50k" className="text-gray-900 font-medium">
+                Under £50,000
+              </option>
+
+              <option value="50k_150k" className="text-gray-900 font-medium">
+                £50,000 - £150,000
+              </option>
+
+              <option value="150k_500k" className="text-gray-900 font-medium">
+                £150,000 - £500,000
+              </option>
+
+              <option value="over_500k" className="text-gray-900 font-medium">
+                Over £500,000
+              </option>
             </select>
             {errors.companyTurnover && (
               <div className="mt-2 flex items-start gap-2 px-3 py-2 bg-red-50 border-l-4 border-red-500 rounded-r-md">
@@ -162,11 +174,9 @@ const QuoteForm = ({ onSuccess }) => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className={
-              isSubmitting
-                ? "w-2/3 md:w-1/3 mx-auto block px-8 py-2 rounded-sm bg-custom-bg text-white text-lg font-medium hover:opacity-90 transition opacity-50 cursor-not-allowed"
-                : "w-2/3 md:w-1/3 mx-auto block px-8 py-2 rounded-sm bg-custom-bg text-white text-lg font-medium hover:opacity-90 transition cursor-pointer"
-            }
+            className={`w-2/3 md:w-2/3 mx-auto block px-8 py-2 rounded-sm bg-custom-bg text-white text-lg font-medium hover:opacity-90 transition ${
+              isSubmitting ? "opacity-50 cursor-not-allowed" : "cursor-pointer"
+            }`}
           >
             {isSubmitting ? "Sending" : "Submit"}
           </button>

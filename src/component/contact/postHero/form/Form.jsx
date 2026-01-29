@@ -41,7 +41,9 @@ const Formy = () => {
         <h1 className="text-2xl md:text-3xl font-bold mb-1 text-gray-900">
           Message Us
         </h1>
-        <p className="mb-6 text-gray-600 text-sm">We'll get back to you within 24 hours.</p>
+        <p className="mb-6 text-gray-600 text-sm">
+          We'll get back to you within 24 hours.
+        </p>
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           {/* Full Name */}
@@ -66,7 +68,9 @@ const Formy = () => {
               className="border border-gray-300 px-4 py-3 w-full rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-gray-400"
             />
             {errors.companyName && (
-              <p className="text-red-600 text-xs mt-1">Enter your company name</p>
+              <p className="text-red-600 text-xs mt-1">
+                Enter your company name
+              </p>
             )}
           </div>
 
@@ -121,8 +125,10 @@ const Formy = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`bg-slate-800 text-white px-12 py-3 rounded-md hover:bg-slate-700 transition duration-300 text-sm font-medium ${
-                isSubmitting ? "cursor-not-allowed opacity-70" : "cursor-pointer"
+              className={`bg-custom-bg text-white px-12 py-3 rounded-md hover:bg-slate-700 transition duration-300 text-sm font-medium ${
+                isSubmitting
+                  ? "cursor-not-allowed opacity-70"
+                  : "cursor-pointer"
               }`}
             >
               {isSubmitting ? "Sending..." : "Send Message"}

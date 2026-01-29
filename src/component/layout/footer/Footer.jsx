@@ -9,7 +9,7 @@ import logoligth from "@/assets/layout/logoligth.svg";
 
 const Footer = () => {
   return (
-    <footer className=" bg-custom-bg text-white  rounded-base shadow-xs border border-default pb-3 md:pb-8 px-4 md:px-24 xl:px-44">
+    <footer className=" bg-custom-bg text-white  rounded-base shadow-xs border border-default pb-3 md:pb-8 px-3 md:px-24 xl:px-44">
       <hr className="mb-3 border-default sm:mx-auto lg:my-6 2xl:my-12 border-gray-400" />
       <div className="flex flex-col md:flex-row items-start justify-between w-full text-gray-400 mb-3 md:mb-6 2xl:mb-12">
         <div className="flex flex-col gap-6 h-auto">

@@ -9,7 +9,7 @@ const StepByStep = ({ data }) => {
     data;
 
   return (
-    <section className="px-8 md:px-16 xl:px-44 py-12 md:py-20 bg-custom-bg">
+    <section className="px-3 md:px-16 xl:px-44 py-12 md:py-20 bg-custom-bg">
       <div className="container mx-auto flex flex-col items-center">
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-4 text-white">

@@ -14,7 +14,7 @@ const Introduction = ({ data }) => {
 
   return (
     <section className="px-8 md:px-16 xl:px-44 py-12 md:py-20 bg-linear-to-r from-blue-50 via-blue-50 to-white">
-      <div className="container mx-auto flex flex-col items-center">
+      <div className="container mx-auto flex flex-col items-center justify-center content-center">
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12 text-custom-bg">
           {heading}{" "}
@@ -24,7 +24,7 @@ const Introduction = ({ data }) => {
 
         {/* Cards Grid */}
         <Cards cardsData={cardsData} />
-        <div className="my-3 lg:my-9 w-full md:w-1/3">
+        <div className="my-3 lg:my-9 w-full mx-auto flex justify-center">
           <ContactUsBtn />
         </div>
       </div>
