@@ -1,9 +1,27 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Popup from "reactjs-popup";
 import GetStarted from "../form/GetStarted"; // Adjust path as needed
 
 const GetStartedNow = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return (
+      <button
+        type="button"
+        className="bg-custom-bg text-white self-center mx-auto text-center px-8 py-2 border-2 rounded-lg border-transparent hidden md:flex hover:opacity-90 transition-all active:scale-95 shadow-sm"
+      >
+        Get Started Now
+      </button>
+    );
+  }
+
   return (
     <Popup
       trigger={

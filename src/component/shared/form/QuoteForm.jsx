@@ -92,9 +92,7 @@ const QuoteForm = ({ onSuccess }) => {
 
           <div className="mb-4 w-full md:w-2/3">
             <select
-              className="w-full appearance-none p-3 bg-white border border-gray-300 rounded text-sm text-gray-700 
-               focus:border-indigo-600 focus:ring-4 focus:ring-custom-bg/10 outline-none transition-all
-               cursor-pointer disabled:bg-gray-50 disabled:text-gray-400"
+              className="w-full appearance-none p-3 bg-white border border-gray-300 rounded text-sm text-gray-700 focus:border-indigo-600 focus:ring-4 focus:ring-custom-bg/10 outline-none transition-all cursor-pointer disabled:bg-gray-50 disabled:text-gray-400"
               {...register("companyTurnover", {
                 required: "Please select a turnover",
               })}
