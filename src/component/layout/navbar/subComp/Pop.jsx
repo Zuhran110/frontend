@@ -37,7 +37,7 @@ const Pop = ({ data }) => {
                     {item.title}
                   </h2>
                   <p className="text-sm text-gray-500 leading-relaxed mt-2">
-                    {item.paragraph1?.substring(0, 55)}...
+                    {item.paragraph1?.substring(0, 50)}...
                   </p>
                 </li>
               ))
