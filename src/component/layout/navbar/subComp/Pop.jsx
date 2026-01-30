@@ -16,42 +16,30 @@ const Pop = ({ data }) => {
         {/* Left Column: List - Display all items from data array */}
         <div>
           <ul className="space-y-1">
-            {Array.isArray(data) && data.length > 0 ? (
-              data.map((item, index) => (
-                <li
-                  key={index}
-                  onClick={() => setSelectedIndex(index)}
-                  className={`group cursor-pointer transition-all ${
+            {data.map((item, index) => (
+              <li
+                key={index}
+                onClick={() => setSelectedIndex(index)}
+                className={`group cursor-pointer transition-all ${
+                  index === selectedIndex
+                    ? "bg-blue-200 p-2 rounded-lg"
+                    : "bg-transparent p-2 hover:bg-blue-50 rounded-lg"
+                }`}
+              >
+                <h2
+                  className={`text-lg font-bold transition-colors ${
                     index === selectedIndex
-                      ? "bg-blue-200 p-2 rounded-lg"
-                      : "bg-transparent p-2 hover:bg-blue-50 rounded-lg"
+                      ? "text-custom-bg"
+                      : "text-gray-600 group-hover:text-custom-bg"
                   }`}
                 >
-                  <h2
-                    className={`text-lg font-bold transition-colors ${
-                      index === selectedIndex
-                        ? "text-custom-bg"
-                        : "text-gray-600 group-hover:text-custom-bg"
-                    }`}
-                  >
-                    {item.title}
-                  </h2>
-                  <p className="text-sm text-gray-500 leading-relaxed mt-2">
-                    {item.paragraph1?.substring(0, 50)}...
-                  </p>
-                </li>
-              ))
-            ) : (
-              // Fallback if data is not an array
-              <li className="bg-blue-200 p-4 rounded-lg">
-                <h2 className="text-lg font-bold text-custom-bg">
-                  {currentData.title}
+                  {item.title}
                 </h2>
                 <p className="text-sm text-gray-500 leading-relaxed mt-2">
-                  {currentData.paragraph1?.substring(0, 100)}...
+                  {item.paragraph1?.substring(0, 50)}...
                 </p>
               </li>
-            )}
+            ))}
           </ul>
         </div>
 
@@ -62,16 +50,15 @@ const Pop = ({ data }) => {
 
         {/* Right Column: Description - Display selected item's full content */}
         <div className="flex flex-col h-full">
-          {imageSrc && (
-            <Image
-              src={imageSrc}
-              alt={`${currentData?.title} logo`}
-              width={100}
-              height={40}
-              className="rounded-2xl object-contain"
-              priority
-            />
-          )}
+          <Image
+            src={imageSrc}
+            alt={`${currentData?.title} logo`}
+            width={100}
+            height={40}
+            className="rounded-2xl object-contain"
+            priority
+          />
+
           <h1 className="text-3xl font-bold text-gray-900 mb-6">
             {currentData.title}
           </h1>
