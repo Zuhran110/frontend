@@ -77,10 +77,21 @@ import galleryImg from "@/assets/servicePgs/stepbystep/galary.svg";
 
 import Subtract from "@/assets/pricing/Subtract.svg";
 
+//logos
+import Accounts from "@/assets/service/Accounts.svg";
+import Bookkeeping from "@/assets/service/Bookkeeping.svg";
+import CompanyFormation from "@/assets/service/CompanyFormation.svg";
+import CompanySecretarial from "@/assets/service/CompanySecretarial.svg";
+import CorporationTax from "@/assets/service/CorporationTax.svg";
+import Payroll from "@/assets/service/Payroll.svg";
+import SelfAssessment from "@/assets/service/SelfAssessment.svg";
+import Vat from "@/assets/service/Vat.svg";
+
 const Data = [
   // company-formation
   {
     slug: "company-formation",
+    logo: CompanyFormation,
     title: "Seamless Company Formation",
     heading: "For Non UK Resident",
     paragraph1:
@@ -243,6 +254,7 @@ const Data = [
   // bookkeeping-services
   {
     slug: "bookkeeping-services",
+    logo: Bookkeeping,
     title: "Reliable Bookkeeping Services",
     paragraph1:
       "Managing your finances shouldn't be stressful. Online Taxation offers expert UK bookkeeping services that keep your records accurate, compliant, and up-to-date, giving you the freedom to focus on growing your business.",
@@ -423,6 +435,7 @@ const Data = [
   // payroll-services
   {
     slug: "payroll-services",
+    logo: Payroll,
     title: "Online Payroll Services",
     paragraph1:
       "Businesses spend an average of six hours every month managing payroll—valuable time that could be better spent growing your business. Payroll errors are also costly, time-consuming, and stressful.",
@@ -598,6 +611,7 @@ const Data = [
   // vat-services
   {
     slug: "vat-services",
+    logo: Vat,
     title: "Expert VAT Services",
     paragraph1:
       "Make VAT registration simple with Online Taxation's expert-led VAT registration service. Whether you're registering voluntarily or because your business has reached the threshold, our streamlined process ensures full compliance with HMRC VAT online registration requirements—saving you time and reducing stress.",
@@ -754,6 +768,7 @@ const Data = [
   // company-secretary
   {
     slug: "company-secretary",
+    logo: CompanySecretarial,
     title: "Full Company Secretary Service",
     paragraph1:
       "Our service provides peace of mind by ensuring that all company secretarial tasks are managed efficiently. We keep your company records up to date and help you remain fully compliant with regulatory requirements throughout the year.",
@@ -922,6 +937,7 @@ const Data = [
   // self-assessment
   {
     slug: "self-assessment",
+    logo: SelfAssessment,
     title: "File Self Assessment Tax Return Online",
     paragraph1:
       "'Filing your Self Assessment tax return in the UK can be simple and stress-free. We make it easy to submit your tax return online, ensuring it is accurate, on time, and fully compliant with HMRC rules. Whether you are self-employed, a freelancer, or have additional income, our expert team will guide you through every step of the process.'",
@@ -1110,6 +1126,7 @@ const Data = [
   // corporation-tax
   {
     slug: "corporation-tax",
+    logo: CorporationTax,
     title: "Corporation Tax Services (CT600)",
     paragraph1:
       "Managing corporation tax is a crucial but often complex part of running a UK business. At Online Taxation, we offer expert Corporation Tax Return (CT600) filing services to ensure your company stays fully compliant with HMRC regulations while making the most of available tax-saving opportunities.",
@@ -1270,6 +1287,7 @@ const Data = [
   // annual-accounts
   {
     slug: "annual-accounts",
+    logo: Accounts,
     title: "Preparing Annual Accounts for Year-End",
     paragraph1:
       "Preparing annual accounts can be time-consuming and complex—but it doesn't have to be. At Online Taxation, we offer comprehensive annual accounts services designed to make the process seamless and stress-free. Our expert team ensures your year-end accounts are accurate, fully compliant, and submitted on time, helping you avoid penalties and stay confident in your financial reporting.",

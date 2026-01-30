@@ -6,7 +6,9 @@ import Email from "@/component/shared/button/Email";
 import closeMenu from "@/assets/layout/CrossIcon.png";
 import HamburgerMenu from "@/assets/layout/MenuBurger.png";
 import ContactUsBtn from "@/component/shared/button/ContactUsBtn";
+import Pop from "./subComp/Pop";
 import { useState } from "react";
+import Data from "@/component/tempData/servicePgData";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,7 +31,7 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <div className="w-full px-3 md:px-16 xl:px-44 py-4 lg:py-8 z-50 bg-linear-to-r from-blue-50 via-blue-50 to-white items-center justify-between hidden lg:flex sticky top-0 border-b border-b-gray-300">
+      <div className=" w-full px-3 md:px-16 xl:px-44 py-4 lg:py-8 z-50 bg-linear-to-r from-blue-50 via-blue-50 to-white items-center justify-between hidden lg:flex sticky top-0 border-b border-b-gray-300">
         <div className="flex-1">
           <Link href="/" className="navbar-logo cursor-pointer inline-block">
             <img src={logo.src} alt="Logo" />
@@ -49,12 +51,23 @@ const Navbar = () => {
           >
             Pricing
           </Link>
-          <Link
-            href="/Service"
-            className={`p-1 text-center transition-colors ${linkClass("/Service")}`}
-          >
-            Services
-          </Link>
+          <div className="group relative">
+            {/* 1. The Trigger Link */}
+            <Link
+              href="/Service"
+              className={`p-1 text-center transition-colors ${linkClass("/Service")}`}
+            >
+              Services
+            </Link>
+
+            {/* 2. The Positioned Container */}
+            <div className="absolute top-full left-1/2 -translate-x-1/2 w-[80vw] max-w-8xl hidden group-hover:block z-50 pt-4">
+              <div className="bg-white border border-gray-300 rounded-3xl overflow-hidden shadow-2xl">
+                <Pop data={Data} />
+              </div>
+            </div>
+          </div>
+
           <Link
             href="/AboutUs"
             className={`p-1 text-center transition-colors ${linkClass("/AboutUs")}`}
